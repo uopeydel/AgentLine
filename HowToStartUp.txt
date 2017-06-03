@@ -1,5 +1,5 @@
 ﻿[dotnet new --install Microsoft.AspNetCore.SpaTemplates::*]
-[dotnet new angular
+[dotnet new angular]
 [npm install]
 click csproj
 save project
