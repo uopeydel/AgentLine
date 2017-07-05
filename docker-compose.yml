@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  agentline:
+    image: agentline
+    build:
+      context: 
+      dockerfile: Dockerfile

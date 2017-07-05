@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using API.Base;
 
 namespace AgentLine.Controllers
 {
@@ -11,7 +12,7 @@ namespace AgentLine.Controllers
     {
         private static string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing" + Class1.re("qq"), "Bracing"+ Class1.re("qq"), "Chilly"+ Class1.re("qq"), "Cool"+ Class1.re("qq"), "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         [HttpGet("[action]")]
@@ -22,7 +23,7 @@ namespace AgentLine.Controllers
             {
                 DateFormatted = DateTime.Now.AddDays(index).ToString("d"),
                 TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                Summary = Summaries[rng.Next(Summaries.Length)]+ Class1.re("qq")
             });
         }
 
