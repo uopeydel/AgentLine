@@ -5,4 +5,5 @@ webpack --config webpack.config.vendor.js && webpack
 click csproj
 save project
 [webpack]
+
 for compile
